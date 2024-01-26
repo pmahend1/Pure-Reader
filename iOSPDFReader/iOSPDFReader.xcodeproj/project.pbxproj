@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6E9E43352B62D9A000AB6234 /* iOSPDFReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43342B62D9A000AB6234 /* iOSPDFReaderApp.swift */; };
-		6E9E43372B62D9A000AB6234 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43362B62D9A000AB6234 /* ContentView.swift */; };
-		6E9E43392B62D9A000AB6234 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43382B62D9A000AB6234 /* Item.swift */; };
+		6E9E43372B62D9A000AB6234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43362B62D9A000AB6234 /* HomeView.swift */; };
 		6E9E433B2B62D9A200AB6234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E433A2B62D9A200AB6234 /* Assets.xcassets */; };
 		6E9E433E2B62D9A200AB6234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E433D2B62D9A200AB6234 /* Preview Assets.xcassets */; };
 		6E9E43482B62D9A300AB6234 /* iOSPDFReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43472B62D9A300AB6234 /* iOSPDFReaderTests.swift */; };
 		6E9E43522B62D9A300AB6234 /* iOSPDFReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43512B62D9A300AB6234 /* iOSPDFReaderUITests.swift */; };
 		6E9E43542B62D9A300AB6234 /* iOSPDFReaderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43532B62D9A300AB6234 /* iOSPDFReaderUITestsLaunchTests.swift */; };
+		6E9E43622B63631200AB6234 /* PDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43612B63631200AB6234 /* PDFView.swift */; };
+		6E9E43652B63634300AB6234 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43642B63634300AB6234 /* HomeViewModel.swift */; };
+		6E9E43672B63639A00AB6234 /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43662B63639A00AB6234 /* PDFViewModel.swift */; };
+		6E9E43692B6363D400AB6234 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43682B6363D400AB6234 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,7 @@
 /* Begin PBXFileReference section */
 		6E9E43312B62D9A000AB6234 /* iOSPDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9E43342B62D9A000AB6234 /* iOSPDFReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPDFReaderApp.swift; sourceTree = "<group>"; };
-		6E9E43362B62D9A000AB6234 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		6E9E43382B62D9A000AB6234 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		6E9E43362B62D9A000AB6234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		6E9E433A2B62D9A200AB6234 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E9E433D2B62D9A200AB6234 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6E9E43432B62D9A300AB6234 /* iOSPDFReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPDFReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +48,10 @@
 		6E9E434D2B62D9A300AB6234 /* iOSPDFReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSPDFReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9E43512B62D9A300AB6234 /* iOSPDFReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPDFReaderUITests.swift; sourceTree = "<group>"; };
 		6E9E43532B62D9A300AB6234 /* iOSPDFReaderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSPDFReaderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6E9E43612B63631200AB6234 /* PDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFView.swift; sourceTree = "<group>"; };
+		6E9E43642B63634300AB6234 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6E9E43662B63639A00AB6234 /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
+		6E9E43682B6363D400AB6234 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +102,9 @@
 		6E9E43332B62D9A000AB6234 /* iOSPDFReader */ = {
 			isa = PBXGroup;
 			children = (
+				6E9E43632B63632E00AB6234 /* ViewModels */,
+				6E9E43602B6362F500AB6234 /* Views */,
 				6E9E43342B62D9A000AB6234 /* iOSPDFReaderApp.swift */,
-				6E9E43362B62D9A000AB6234 /* ContentView.swift */,
-				6E9E43382B62D9A000AB6234 /* Item.swift */,
 				6E9E433A2B62D9A200AB6234 /* Assets.xcassets */,
 				6E9E433C2B62D9A200AB6234 /* Preview Content */,
 			);
@@ -128,6 +134,25 @@
 				6E9E43532B62D9A300AB6234 /* iOSPDFReaderUITestsLaunchTests.swift */,
 			);
 			path = iOSPDFReaderUITests;
+			sourceTree = "<group>";
+		};
+		6E9E43602B6362F500AB6234 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E43362B62D9A000AB6234 /* HomeView.swift */,
+				6E9E43612B63631200AB6234 /* PDFView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E9E43632B63632E00AB6234 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6E9E43642B63634300AB6234 /* HomeViewModel.swift */,
+				6E9E43662B63639A00AB6234 /* PDFViewModel.swift */,
+				6E9E43682B6363D400AB6234 /* BaseViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,9 +285,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E9E43372B62D9A000AB6234 /* ContentView.swift in Sources */,
-				6E9E43392B62D9A000AB6234 /* Item.swift in Sources */,
+				6E9E43622B63631200AB6234 /* PDFView.swift in Sources */,
+				6E9E43672B63639A00AB6234 /* PDFViewModel.swift in Sources */,
+				6E9E43372B62D9A000AB6234 /* HomeView.swift in Sources */,
 				6E9E43352B62D9A000AB6234 /* iOSPDFReaderApp.swift in Sources */,
+				6E9E43652B63634300AB6234 /* HomeViewModel.swift in Sources */,
+				6E9E43692B6363D400AB6234 /* BaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
