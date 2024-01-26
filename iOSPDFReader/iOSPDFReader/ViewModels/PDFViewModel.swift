@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+final class PDFViewModel: BaseViewModel {
+    @Published var pdfFile : PDFFile?
+    
+    init(pdfFile: PDFFile?) {
+        self.pdfFile = pdfFile
+    }
+    
+}
