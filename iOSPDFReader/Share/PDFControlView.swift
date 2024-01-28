@@ -1,8 +1,8 @@
 //
-//  PDFView.swift
-//  iOSPDFReader
+//  PDFControlView.swift
+//  Share
 //
-//  Created by Prateek Mahendrakar on 1/25/24.
+//  Created by Prateek Mahendrakar on 1/27/24.
 //
 
 import PDFKit

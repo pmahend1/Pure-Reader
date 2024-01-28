@@ -20,6 +20,12 @@
 		6E9E43692B6363D400AB6234 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43682B6363D400AB6234 /* BaseViewModel.swift */; };
 		6E9E436E2B63666E00AB6234 /* PDFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E436D2B63666E00AB6234 /* PDFFile.swift */; };
 		6E9E43712B636ED800AB6234 /* PDFControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43702B636ED800AB6234 /* PDFControlView.swift */; };
+		6ED1C63C2B65DE8A00391E5F /* PDFDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C63B2B65DE8A00391E5F /* PDFDisplayView.swift */; };
+		6ED1C63E2B65DEA500391E5F /* PDFFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C63D2B65DEA500391E5F /* PDFFile.swift */; };
+		6ED1C6402B65DEC300391E5F /* PDFViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C63F2B65DEC300391E5F /* PDFViewModel.swift */; };
+		6ED1C6422B65DEEC00391E5F /* PDFControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C6412B65DEEC00391E5F /* PDFControlView.swift */; };
+		6ED7DFA12B65D92200227F08 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7DFA02B65D92200227F08 /* ShareViewController.swift */; };
+		6ED7DFA82B65D92200227F08 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6ED7DF9E2B65D92200227F08 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +43,28 @@
 			remoteGlobalIDString = 6E9E43302B62D99F00AB6234;
 			remoteInfo = iOSPDFReader;
 		};
+		6ED7DFA62B65D92200227F08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E9E43292B62D99F00AB6234 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6ED7DF9D2B65D92200227F08;
+			remoteInfo = Share;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6ED7DFAC2B65D92200227F08 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6ED7DFA82B65D92200227F08 /* Share.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6E9E43312B62D9A000AB6234 /* iOSPDFReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSPDFReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +83,14 @@
 		6E9E43682B6363D400AB6234 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		6E9E436D2B63666E00AB6234 /* PDFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFile.swift; sourceTree = "<group>"; };
 		6E9E43702B636ED800AB6234 /* PDFControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFControlView.swift; sourceTree = "<group>"; };
+		6ED1C63B2B65DE8A00391E5F /* PDFDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFDisplayView.swift; sourceTree = "<group>"; };
+		6ED1C63D2B65DEA500391E5F /* PDFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFile.swift; sourceTree = "<group>"; };
+		6ED1C63F2B65DEC300391E5F /* PDFViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewModel.swift; sourceTree = "<group>"; };
+		6ED1C6412B65DEEC00391E5F /* PDFControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFControlView.swift; sourceTree = "<group>"; };
+		6ED7DF992B65D59100227F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6ED7DF9E2B65D92200227F08 /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ED7DFA02B65D92200227F08 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		6ED7DFA52B65D92200227F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +115,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ED7DF9B2B65D92200227F08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,6 +131,7 @@
 				6E9E43332B62D9A000AB6234 /* iOSPDFReader */,
 				6E9E43462B62D9A300AB6234 /* iOSPDFReaderTests */,
 				6E9E43502B62D9A300AB6234 /* iOSPDFReaderUITests */,
+				6ED7DF9F2B65D92200227F08 /* Share */,
 				6E9E43322B62D9A000AB6234 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,6 +142,7 @@
 				6E9E43312B62D9A000AB6234 /* iOSPDFReader.app */,
 				6E9E43432B62D9A300AB6234 /* iOSPDFReaderTests.xctest */,
 				6E9E434D2B62D9A300AB6234 /* iOSPDFReaderUITests.xctest */,
+				6ED7DF9E2B65D92200227F08 /* Share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +150,7 @@
 		6E9E43332B62D9A000AB6234 /* iOSPDFReader */ = {
 			isa = PBXGroup;
 			children = (
+				6ED7DF992B65D59100227F08 /* Info.plist */,
 				6E9E436A2B63661D00AB6234 /* Models */,
 				6E9E43632B63632E00AB6234 /* ViewModels */,
 				6E9E43602B6362F500AB6234 /* Views */,
@@ -177,6 +222,19 @@
 			path = Controls;
 			sourceTree = "<group>";
 		};
+		6ED7DF9F2B65D92200227F08 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				6ED7DFA02B65D92200227F08 /* ShareViewController.swift */,
+				6ED7DFA52B65D92200227F08 /* Info.plist */,
+				6ED1C63B2B65DE8A00391E5F /* PDFDisplayView.swift */,
+				6ED1C63D2B65DEA500391E5F /* PDFFile.swift */,
+				6ED1C63F2B65DEC300391E5F /* PDFViewModel.swift */,
+				6ED1C6412B65DEEC00391E5F /* PDFControlView.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -187,10 +245,12 @@
 				6E9E432D2B62D99F00AB6234 /* Sources */,
 				6E9E432E2B62D99F00AB6234 /* Frameworks */,
 				6E9E432F2B62D99F00AB6234 /* Resources */,
+				6ED7DFAC2B65D92200227F08 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6ED7DFA72B65D92200227F08 /* PBXTargetDependency */,
 			);
 			name = iOSPDFReader;
 			productName = iOSPDFReader;
@@ -233,6 +293,23 @@
 			productReference = 6E9E434D2B62D9A300AB6234 /* iOSPDFReaderUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		6ED7DF9D2B65D92200227F08 /* Share */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6ED7DFA92B65D92200227F08 /* Build configuration list for PBXNativeTarget "Share" */;
+			buildPhases = (
+				6ED7DF9A2B65D92200227F08 /* Sources */,
+				6ED7DF9B2B65D92200227F08 /* Frameworks */,
+				6ED7DF9C2B65D92200227F08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Share;
+			productName = Share;
+			productReference = 6ED7DF9E2B65D92200227F08 /* Share.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -240,6 +317,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
@@ -253,6 +333,9 @@
 					6E9E434C2B62D9A300AB6234 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = 6E9E43302B62D99F00AB6234;
+					};
+					6ED7DF9D2B65D92200227F08 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
@@ -272,6 +355,7 @@
 				6E9E43302B62D99F00AB6234 /* iOSPDFReader */,
 				6E9E43422B62D9A300AB6234 /* iOSPDFReaderTests */,
 				6E9E434C2B62D9A300AB6234 /* iOSPDFReaderUITests */,
+				6ED7DF9D2B65D92200227F08 /* Share */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +378,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		6E9E434B2B62D9A300AB6234 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ED7DF9C2B65D92200227F08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,6 +426,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6ED7DF9A2B65D92200227F08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6ED1C63C2B65DE8A00391E5F /* PDFDisplayView.swift in Sources */,
+				6ED7DFA12B65D92200227F08 /* ShareViewController.swift in Sources */,
+				6ED1C6422B65DEEC00391E5F /* PDFControlView.swift in Sources */,
+				6ED1C63E2B65DEA500391E5F /* PDFFile.swift in Sources */,
+				6ED1C6402B65DEC300391E5F /* PDFViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -347,6 +450,11 @@
 			isa = PBXTargetDependency;
 			target = 6E9E43302B62D99F00AB6234 /* iOSPDFReader */;
 			targetProxy = 6E9E434E2B62D9A300AB6234 /* PBXContainerItemProxy */;
+		};
+		6ED7DFA72B65D92200227F08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6ED7DF9D2B65D92200227F08 /* Share */;
+			targetProxy = 6ED7DFA62B65D92200227F08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,6 +581,7 @@
 		6E9E43582B62D9A300AB6234 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -481,11 +590,13 @@
 				DEVELOPMENT_TEAM = GWGK4HR33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSPDFReader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,6 +613,7 @@
 		6E9E43592B62D9A300AB6234 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -510,11 +622,13 @@
 				DEVELOPMENT_TEAM = GWGK4HR33M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iOSPDFReader/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -604,6 +718,56 @@
 			};
 			name = Release;
 		};
+		6ED7DFAA2B65D92200227F08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWGK4HR33M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrateekMahendrakar.iOSPDFReader.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6ED7DFAB2B65D92200227F08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GWGK4HR33M;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Share;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.PrateekMahendrakar.iOSPDFReader.Share;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -639,6 +803,15 @@
 			buildConfigurations = (
 				6E9E435E2B62D9A300AB6234 /* Debug */,
 				6E9E435F2B62D9A300AB6234 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6ED7DFA92B65D92200227F08 /* Build configuration list for PBXNativeTarget "Share" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6ED7DFAA2B65D92200227F08 /* Debug */,
+				6ED7DFAB2B65D92200227F08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
