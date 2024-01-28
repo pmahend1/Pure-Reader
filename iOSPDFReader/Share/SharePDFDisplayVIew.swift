@@ -1,14 +1,13 @@
 //
-//  PDFView.swift
-//  iOSPDFReader
+//  SharePDFDisplayVIew.swift
+//  Share
 //
-//  Created by Prateek Mahendrakar on 1/25/24.
+//  Created by Prateek Mahendrakar on 1/27/24.
 //
 
-import PDFKit
 import SwiftUI
 
-struct PDFDisplayView: View {
+struct SharePDFDisplayVIew: View {
     @StateObject private var viewModel: PDFViewModel
     init(pdfFile: PDFFile?) {
         _viewModel = StateObject(wrappedValue: .init(pdfFile: pdfFile))
@@ -25,5 +24,5 @@ struct PDFDisplayView: View {
 }
 
 #Preview {
-    PDFDisplayView(pdfFile: PDFFile(url: URL(filePath: "somepath")))
+    SharePDFDisplayVIew(pdfFile: PDFFile(url: URL(filePath: "somepath")))
 }
