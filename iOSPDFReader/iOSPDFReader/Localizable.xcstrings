@@ -12,25 +12,33 @@
       }
     },
     "Files in Documents" : {
-
-    },
-    "Invalid URL" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Files in Documents"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "URL invalida"
+            "value" : "Files in Documents"
           }
         }
       }
     },
-    "Open" : {
-      "extractionState" : "stale",
+    "Invalid URL" : {
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid URL"
+          }
+        },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abierto"
+            "value" : "URL invalida"
           }
         }
       }
@@ -54,7 +62,20 @@
       }
     },
     "PDF Reader" : {
-
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF Reader"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF Reader"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

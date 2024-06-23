@@ -15,16 +15,17 @@ class HomeViewModel: BaseViewModel {
     @Published var isFileImportOpen = false
     @Published var isPDFOpen = false
     @Published var pdfFile: PDFFile? = nil
-    @Published var thumbnails: Array<PDFThumbnail> = .init()
+    @Published var thumbnails: [PDFThumbnail] = .init()
 
     public func getPdfs() -> [PDFFile] {
         var pdfFiles = [PDFFile]()
 
         do {
-            let urls = try FileManager.default.contentsOfDirectory(at: URL.downloadsDirectory, includingPropertiesForKeys: nil)
+            let urls = try FileManager.default.contentsOfDirectory(at: URL.documentsDirectory , includingPropertiesForKeys: nil)
             for url in urls {
-                print(url)
-                pdfFiles.append(PDFFile(url: url))
+                if pdfFiles.count < 8 { // max 8 for performance
+                    pdfFiles.append(PDFFile(url: url))
+                }
             }
 
         } catch {
@@ -32,6 +33,4 @@ class HomeViewModel: BaseViewModel {
         }
         return pdfFiles
     }
-
-    
 }
