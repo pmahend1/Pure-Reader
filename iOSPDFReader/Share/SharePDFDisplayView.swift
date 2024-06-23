@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct SharePDFDisplayView: View {
-    @Environment(\.dismiss) var dismiss
     @StateObject private var viewModel: PDFViewModel
 
     private var shareViewController: ShareViewController
@@ -26,7 +25,6 @@ struct SharePDFDisplayView: View {
                     .navigationBarTitleDisplayMode(.inline)
                     .toolbar {
                         Button("Close", systemImage: "xmark.circle.fill") {
-                            dismiss()
                             shareViewController.close()
                         }
                     }

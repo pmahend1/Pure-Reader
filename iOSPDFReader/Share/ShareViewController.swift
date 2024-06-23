@@ -29,6 +29,10 @@ class ShareViewController: SLComposeServiceViewController {
         return []
     }
 
+    override func viewDidAppear(_: Bool) {
+        textView.endEditing(true)
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
