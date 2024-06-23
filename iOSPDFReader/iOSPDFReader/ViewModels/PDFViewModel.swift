@@ -13,5 +13,4 @@ final class PDFViewModel: BaseViewModel {
     init(pdfFile: PDFFile?) {
         self.pdfFile = pdfFile
     }
-    
 }

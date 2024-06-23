@@ -8,5 +8,5 @@
 import Foundation
 
 class BaseViewModel: ObservableObject {
-    public var isBusy = false
+    @Published public var isBusy = false
 }

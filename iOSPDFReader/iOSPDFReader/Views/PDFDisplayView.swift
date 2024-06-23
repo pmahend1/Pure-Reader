@@ -18,6 +18,7 @@ struct PDFDisplayView: View {
         if let pdfFile = viewModel.pdfFile {
             PDFControlView(url: pdfFile.url)
                 .navigationTitle("\(pdfFile.fileName)")
+                .navigationBarTitleDisplayMode(.inline)
         } else {
             Text("Invalid URL")
         }
