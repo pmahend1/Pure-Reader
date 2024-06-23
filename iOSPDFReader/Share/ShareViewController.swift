@@ -7,9 +7,9 @@
 
 import PDFKit
 import Social
+import SwiftUI
 import UIKit
 import UniformTypeIdentifiers
-import SwiftUI
 
 class ShareViewController: SLComposeServiceViewController {
     override func isContentValid() -> Bool {
@@ -52,9 +52,10 @@ class ShareViewController: SLComposeServiceViewController {
                 }
 
                 if let url = pdf as? URL {
+                    let pdfFile = PDFFile(url: url)
                     DispatchQueue.main.async {
                         // host the SwiftU view
-                        let contentView = UIHostingController(rootView: PDFDisplayView(pdfFile: PDFFile(url: url)))
+                        let contentView = UIHostingController(rootView: SharePDFDisplayView(pdfFile: pdfFile, shareViewController: self))
                         self.addChild(contentView)
                         self.view.addSubview(contentView.view)
 

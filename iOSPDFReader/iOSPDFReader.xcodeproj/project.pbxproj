@@ -27,7 +27,7 @@
 		6ED1C6462B65E85C00391E5F /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43682B6363D400AB6234 /* BaseViewModel.swift */; };
 		6ED1C6472B65E86000391E5F /* PDFControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43702B636ED800AB6234 /* PDFControlView.swift */; };
 		6ED1C6482B65E86500391E5F /* PDFDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43612B63631200AB6234 /* PDFDisplayView.swift */; };
-		6ED1C64A2B65E9C900391E5F /* SharePDFDisplayVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C6492B65E9C900391E5F /* SharePDFDisplayVIew.swift */; };
+		6ED1C64A2B65E9C900391E5F /* SharePDFDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1C6492B65E9C900391E5F /* SharePDFDisplayView.swift */; };
 		6ED7DFA12B65D92200227F08 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7DFA02B65D92200227F08 /* ShareViewController.swift */; };
 		6ED7DFA82B65D92200227F08 /* Share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 6ED7DF9E2B65D92200227F08 /* Share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -89,7 +89,7 @@
 		6E9E43682B6363D400AB6234 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		6E9E436D2B63666E00AB6234 /* PDFFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFFile.swift; sourceTree = "<group>"; };
 		6E9E43702B636ED800AB6234 /* PDFControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFControlView.swift; sourceTree = "<group>"; };
-		6ED1C6492B65E9C900391E5F /* SharePDFDisplayVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePDFDisplayVIew.swift; sourceTree = "<group>"; };
+		6ED1C6492B65E9C900391E5F /* SharePDFDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePDFDisplayView.swift; sourceTree = "<group>"; };
 		6ED7DF992B65D59100227F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		6ED7DF9E2B65D92200227F08 /* Share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED7DFA02B65D92200227F08 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -232,9 +232,9 @@
 		6ED7DF9F2B65D92200227F08 /* Share */ = {
 			isa = PBXGroup;
 			children = (
+				6ED1C6492B65E9C900391E5F /* SharePDFDisplayView.swift */,
 				6ED7DFA02B65D92200227F08 /* ShareViewController.swift */,
 				6ED7DFA52B65D92200227F08 /* Info.plist */,
-				6ED1C6492B65E9C900391E5F /* SharePDFDisplayVIew.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -438,7 +438,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED7DFA12B65D92200227F08 /* ShareViewController.swift in Sources */,
-				6ED1C64A2B65E9C900391E5F /* SharePDFDisplayVIew.swift in Sources */,
+				6ED1C64A2B65E9C900391E5F /* SharePDFDisplayView.swift in Sources */,
 				6ED1C6462B65E85C00391E5F /* BaseViewModel.swift in Sources */,
 				6ED1C6482B65E86500391E5F /* PDFDisplayView.swift in Sources */,
 				6ED1C6472B65E86000391E5F /* PDFControlView.swift in Sources */,
