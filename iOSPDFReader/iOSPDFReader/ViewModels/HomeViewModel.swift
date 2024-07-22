@@ -21,7 +21,7 @@ class HomeViewModel: BaseViewModel {
         var pdfFiles = [PDFFile]()
 
         do {
-            let urls = try FileManager.default.contentsOfDirectory(at: URL.documentsDirectory , includingPropertiesForKeys: nil)
+            let urls = try FileManager.default.contentsOfDirectory(at: URL.documentsDirectory, includingPropertiesForKeys: nil)
             for url in urls {
                 if pdfFiles.count < 8 { // max 8 for performance
                     pdfFiles.append(PDFFile(url: url))
