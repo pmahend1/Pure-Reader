@@ -1,13 +1,13 @@
 //
-//  iOSPDFReaderUITestsLaunchTests.swift
-//  iOSPDFReaderUITests
+//  PureReaderUITestsLaunchTests.swift
+//  PureReaderUITests
 //
 //  Created by Prateek Mahendrakar on 1/25/24.
 //
 
 import XCTest
 
-final class iOSPDFReaderUITestsLaunchTests: XCTestCase {
+final class PureReaderUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

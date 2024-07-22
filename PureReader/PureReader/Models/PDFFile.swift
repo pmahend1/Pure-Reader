@@ -1,6 +1,6 @@
 //
 //  PDFFile.swift
-//  iOSPDFReader
+//  PureReader
 //
 //  Created by Prateek Mahendrakar on 1/25/24.
 //

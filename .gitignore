@@ -93,3 +93,5 @@ iOSInjectionProject/
 # Added
 xcshareddata/*
 *.xcworkspace/
+
+.DS_Store

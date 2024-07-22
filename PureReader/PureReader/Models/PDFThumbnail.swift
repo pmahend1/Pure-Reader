@@ -1,6 +1,6 @@
 //
 //  PdfThumbnail.swift
-//  iOSPDFReader
+//  PureReader
 //
 //  Created by Prateek Mahendrakar on 6/22/24.
 //

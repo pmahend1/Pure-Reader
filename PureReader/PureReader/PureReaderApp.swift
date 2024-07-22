@@ -1,6 +1,6 @@
 //
-//  iOSPDFReaderApp.swift
-//  iOSPDFReader
+//  PureReaderApp.swift
+//  PureReader
 //
 //  Created by Prateek Mahendrakar on 1/25/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct iOSPDFReaderApp: App {
+struct PureReaderApp: App {
     var body: some Scene {
         WindowGroup {
             HomeView()
