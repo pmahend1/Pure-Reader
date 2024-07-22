@@ -66,13 +66,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PDF Reader"
+            "value" : "Pure Reader"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "PDF Reader"
+            "value" : "Pure Reader"
           }
         }
       }
