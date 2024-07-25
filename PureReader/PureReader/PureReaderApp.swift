@@ -11,7 +11,7 @@ import SwiftUI
 struct PureReaderApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashCoordinatorView()
         }
     }
 }
