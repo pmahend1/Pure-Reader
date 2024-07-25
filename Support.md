@@ -21,7 +21,7 @@ Frequently Asked Questions (FAQ)
 
     - Make sure PDF is not corrupted, if it is downloaded please ensure it is completely downloaded.
   
-## Contact Us
+## Contact
 
 If you couldn't find an answer to your question in the FAQ, please submit a support ticket. I aim to respond to all inquiries as soon as possible.
 

@@ -10,10 +10,10 @@ Mission: To provide a reliable, privacy-centric PDF viewing experience for every
 
 Key features:
 
-- Simple and easy to use
-- Respects your privacy
-- Core PDF viewing functionality
+- Simple and easy to use.
+- Respects your privacy.
+- Core PDF viewing functionality.
 
-If you have any feedback or suggestions, please don't hesitate to contact us.
+If you have any feedback or suggestions, please don't hesitate to [contact](./Support.md#contact).
 
 Enjoy reading without compromise!
