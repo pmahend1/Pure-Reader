@@ -17,6 +17,12 @@ struct PDFDisplayView: View {
     var body: some View {
         if let pdfFile = viewModel.pdfFile {
             PDFControlView(url: pdfFile.url)
+                .searchable(text: $viewModel.searchText, placement: .toolbar)
+                .onChange(of: viewModel.searchText, perform: { val in
+                    if val.count > 0{
+                        print("\(val)")
+                    }
+                })
                 .navigationTitle("\(pdfFile.fileName)")
                 .navigationBarTitleDisplayMode(.inline)
         } else {
