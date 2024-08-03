@@ -9,40 +9,31 @@ import PDFKit
 import SwiftUI
 
 struct PDFControlView: UIViewRepresentable {
-    let url: URL
-
-    @State var text: String = ""
-
-    private func updateText(pdfView: PDFView) {
-        if let pdfDocUnwrap = pdfView.document {
-            let pageCount = pdfDocUnwrap.pageCount
-            let documentContent = NSMutableAttributedString()
-
-            for i in 0 ..< pageCount {
-                guard let page = pdfDocUnwrap.page(at: i) else { continue }
-                guard let pageContent = page.attributedString else { continue }
-                documentContent.append(pageContent)
-            }
-            text = "\(documentContent)"
-        }
-    }
+    var pdfDocument: PDFDocument?
+    var searchResults: [PDFSelection]
 
     func makeUIView(context _: Context) -> PDFView {
         let pdfView = PDFView()
-        pdfView.document = PDFDocument(url: url)
+        pdfView.document = pdfDocument
         pdfView.autoScales = true
-        updateText(pdfView: pdfView)
         return pdfView
     }
 
     func updateUIView(_ pdfView: PDFView, context _: Context) {
-        pdfView.document = PDFDocument(url: url)
-        updateText(pdfView: pdfView)
+        pdfView.document = pdfDocument
         pdfView.updateFocusIfNeeded()
         if #available(iOS 17.0, *) {
             pdfView.updateTraitsIfNeeded()
         }
         pdfView.updateConstraintsIfNeeded()
         pdfView.layoutIfNeeded()
+        highlightSearchResults(in: pdfView)
+    }
+
+    private func highlightSearchResults(in pdfView: PDFView) {
+        for selection in searchResults {
+            selection.color = .yellow
+            pdfView.setCurrentSelection(selection, animate: true)
+        }
     }
 }

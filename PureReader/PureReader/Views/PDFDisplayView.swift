@@ -10,24 +10,47 @@ import SwiftUI
 
 struct PDFDisplayView: View {
     @StateObject private var viewModel: PDFViewModel
+    @State private var searchResults = [PDFSelection]()
+    @State private var pdfDocument: PDFDocument?
+
     init(pdfFile: PDFFile?) {
         _viewModel = StateObject(wrappedValue: .init(pdfFile: pdfFile))
     }
 
     var body: some View {
         if let pdfFile = viewModel.pdfFile {
-            PDFControlView(url: pdfFile.url)
-                .searchable(text: $viewModel.searchText, placement: .toolbar)
-                .onChange(of: viewModel.searchText, perform: { val in
-                    if val.count > 0{
-                        print("\(val)")
+            VStack {
+                HStack {
+                    TextField("Search", text: $viewModel.searchText)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .padding()
+
+                    Button("Search", systemImage: "magnifyingglass.circle.fill") {
+                        searchPDF()
                     }
-                })
-                .navigationTitle("\(pdfFile.fileName)")
-                .navigationBarTitleDisplayMode(.inline)
+                    .padding()
+                }
+
+                PDFControlView(pdfDocument: pdfDocument, searchResults: searchResults)
+                    .onAppear {
+                        pdfDocument = PDFDocument(url: pdfFile.url)
+                    }
+                    .navigationTitle("\(pdfFile.fileName)")
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+
         } else {
             Text("Invalid URL")
         }
+    }
+
+    func searchPDF() {
+        guard let document = pdfDocument else { return }
+        searchResults.removeAll()
+
+        let selections = document.findString(viewModel.searchText, withOptions: .caseInsensitive)
+        searchResults.append(contentsOf: selections)
+        
     }
 }
 

@@ -13,6 +13,7 @@
 		6E535E8D2C50BCE30059A93B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E535E8C2C50BCE30059A93B /* Color+Extension.swift */; };
 		6E67A85A2C279CF800796EBE /* PDFThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E67A8592C279CF800796EBE /* PDFThumbnail.swift */; };
 		6E67A85C2C27A81100796EBE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 6E67A85B2C27A81100796EBE /* Localizable.xcstrings */; };
+		6E84C8752C58921F008FA85C /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E84C8742C58921F008FA85C /* String+Extension.swift */; };
 		6E9E43352B62D9A000AB6234 /* PureReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43342B62D9A000AB6234 /* PureReaderApp.swift */; };
 		6E9E43372B62D9A000AB6234 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9E43362B62D9A000AB6234 /* HomeView.swift */; };
 		6E9E433B2B62D9A200AB6234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9E433A2B62D9A200AB6234 /* Assets.xcassets */; };
@@ -81,6 +82,7 @@
 		6E535E8C2C50BCE30059A93B /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		6E67A8592C279CF800796EBE /* PDFThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFThumbnail.swift; sourceTree = "<group>"; };
 		6E67A85B2C27A81100796EBE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6E84C8742C58921F008FA85C /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		6E9E43312B62D9A000AB6234 /* PureReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PureReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9E43342B62D9A000AB6234 /* PureReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureReaderApp.swift; sourceTree = "<group>"; };
 		6E9E43362B62D9A000AB6234 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -174,6 +176,7 @@
 				6E535E882C50B65D0059A93B /* SplashCoordinatorView.swift */,
 				6E535E8A2C50B6900059A93B /* SplashScreen.swift */,
 				6E535E8C2C50BCE30059A93B /* Color+Extension.swift */,
+				6E84C8742C58921F008FA85C /* String+Extension.swift */,
 			);
 			path = PureReader;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				6E9E43372B62D9A000AB6234 /* HomeView.swift in Sources */,
 				6E9E43352B62D9A000AB6234 /* PureReaderApp.swift in Sources */,
 				6E535E8B2C50B6900059A93B /* SplashScreen.swift in Sources */,
+				6E84C8752C58921F008FA85C /* String+Extension.swift in Sources */,
 				6E535E8D2C50BCE30059A93B /* Color+Extension.swift in Sources */,
 				6E535E892C50B65D0059A93B /* SplashCoordinatorView.swift in Sources */,
 				6E9E43712B636ED800AB6234 /* PDFControlView.swift in Sources */,
