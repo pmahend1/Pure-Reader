@@ -11,6 +11,7 @@ import SwiftUI
 struct PDFControlView: UIViewRepresentable {
     var pdfDocument: PDFDocument?
     var searchResults: [PDFSelection]
+    var currentResult: PDFSelection?
 
     func makeUIView(context _: Context) -> PDFView {
         let pdfView = PDFView()
@@ -27,7 +28,12 @@ struct PDFControlView: UIViewRepresentable {
         }
         pdfView.updateConstraintsIfNeeded()
         pdfView.layoutIfNeeded()
-        highlightSearchResults(in: pdfView)
+
+        if !searchResults.isEmpty, let firstResult = searchResults.first {
+            if let currentResultUnwrp = currentResult, currentResultUnwrp != firstResult {
+                highlightSearchResult(for: currentResultUnwrp, in: pdfView)            }
+           
+        }
     }
 
     private func highlightSearchResults(in pdfView: PDFView) {
@@ -35,5 +41,10 @@ struct PDFControlView: UIViewRepresentable {
             selection.color = .yellow
             pdfView.setCurrentSelection(selection, animate: true)
         }
+    }
+
+    public func highlightSearchResult(for selection: PDFSelection, in pdfView: PDFView) {
+        selection.color = .blue
+        pdfView.setCurrentSelection(selection, animate: true)
     }
 }

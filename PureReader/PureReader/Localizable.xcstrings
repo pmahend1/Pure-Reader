@@ -11,6 +11,9 @@
         }
       }
     },
+    "%lld results" : {
+
+    },
     "Files in Documents" : {
       "localizations" : {
         "en" : {
@@ -42,6 +45,9 @@
           }
         }
       }
+    },
+    "Next" : {
+
     },
     "Open a PDF file" : {
       "comment" : "Open a PDF file",
